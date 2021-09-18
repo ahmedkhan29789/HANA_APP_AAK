@@ -13,7 +13,7 @@
 <script>
 
 	var oModel = new sap.ui.model.odata.v2.ODataModel("/xsodata/purchaseOrder.xsodata", true);
-	var oTable = new sap.ui.table.Table({ title: "My first table" });
+	var oTable = new sap.ui.table.Table({ title: "My first table with branch1" });
 	oTable.addColumn(new sap.ui.table.Column({ label: "PO ID", template: "PURCHASEORDERID" }));
 	oTable.setModel(oModel);
 	oTable.bindRows("/POHeader");
